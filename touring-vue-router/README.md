@@ -5,6 +5,8 @@
 3. Building Pagination
 4. Nested Routes
 5. Redirect & Alias
+6. Programmatic Navigation
+7. Error Handling & 404s
 
 ## Project setup
 
