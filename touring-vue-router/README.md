@@ -4,6 +4,7 @@
 2. Receiving URL Parameters
 3. Building Pagination
 4. Nested Routes
+5. Redirect & Alias
 
 ## Project setup
 

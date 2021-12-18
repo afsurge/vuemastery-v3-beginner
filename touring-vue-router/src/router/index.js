@@ -14,7 +14,7 @@ const routes = [
     props: (route) => ({ page: parseInt(route.query.page) || 1 }),
   },
   {
-    path: "/event/:id",
+    path: "/events/:id",
     name: "EventLayout",
     props: true,
     component: EventLayout,
@@ -36,16 +36,38 @@ const routes = [
       },
     ],
   },
+  {
+    path: "/event/:afterEvent(.*)",
+    redirect: (to) => {
+      return { path: "/events/" + to.params.afterEvent };
+    },
+  },
+  // {
+  //   path: "/event/:id",
+  //   redirect: () => {
+  //     return { name: "EventDetails" };
+  //   },
+  //   children: [
+  //     { path: "register", redirect: () => ({ name: "EventRegister" }) },
+  //     { path: "edit", redirect: () => ({ name: "EventEdit" }) },
+  //   ],
+  // },
 
   {
-    path: "/about",
+    path: "/about-us",
     name: "About",
+    component: About,
+    // alias: "/about",
+    //
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     // component: () =>
     //   import(/* webpackChunkName: "about" */ "../views/About.vue"),
-    component: About,
+  },
+  {
+    path: "/about",
+    redirect: { name: "About" },
   },
 ];
 
