@@ -43,12 +43,11 @@ export default {
   },
   created() {
     watchEffect(() => {
-      let self = this;
-      // this.events = null;
-      EventService.getEvents(2, self.page)
+      this.events = null;
+      EventService.getEvents(2, this.page)
         .then((response) => {
           // console.log("events:", response.data);
-          self.events = response.data;
+          this.events = response.data;
           this.totalEvents = response.headers["x-total-count"];
         })
         .catch((error) => {
@@ -59,7 +58,6 @@ export default {
   computed: {
     hasNextPage() {
       var totalPages = Math.ceil(this.totalEvents / 2);
-
       return this.page < totalPages;
     },
   },
