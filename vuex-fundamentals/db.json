@@ -29,6 +29,26 @@
       "date": "July 22, 2022",
       "time": "11:00",
       "organizer": "Carey Wales"
+    },
+    {
+      "id": "f7b6f0e0-7650-4e17-bac0-df0e776485fa",
+      "category": "food",
+      "title": "Indoor Grill",
+      "description": "Hosted by Shuvo bhai and bhabi",
+      "location": "Berlin",
+      "date": "December 19, 2021",
+      "time": "15:00",
+      "organizer": "Abrar Faisal"
+    },
+    {
+      "id": 790,
+      "category": "nature",
+      "title": "Global Warming",
+      "description": "Petition",
+      "location": "Dhaka, Bangladesh",
+      "date": "December 31, 2021",
+      "time": "00:00",
+      "organizer": ""
     }
   ]
 }
