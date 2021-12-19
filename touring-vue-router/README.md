@@ -7,6 +7,9 @@
 5. Redirect & Alias
 6. Programmatic Navigation
 7. Error Handling & 404s
+8. Flash Messages
+9. In-Component Route Guards
+10.
 
 ## Project setup
 
