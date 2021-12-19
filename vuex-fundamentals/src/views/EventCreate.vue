@@ -83,7 +83,19 @@ export default {
       //   this.event.id = uuidv4();
       //   this.event.organizer = this.$store.state.user;
       //
-      this.$store.dispatch("createEvent", event);
+      this.$store.dispatch("createEvent", event).then(() => {
+        this.$router
+          .push({
+            name: "EventDetails",
+            params: { id: event.id },
+          })
+          .catch((error) => {
+            this.$router.push({
+              name: "ErrorDisplay",
+              params: { error: error },
+            });
+          });
+      });
       //   EventService.postEvent(this.event)
       //     .then(() => {
       //       // add event to Vuex state
