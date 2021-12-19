@@ -5,7 +5,7 @@
 3. Updating State
 4. Fetching State
 5. Error Handling
-6. Next Steps
+6. Next Steps - Getters, Modules, Mappers
 
 ## Project setup
 
