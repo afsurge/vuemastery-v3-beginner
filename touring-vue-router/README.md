@@ -9,7 +9,8 @@
 7. Error Handling & 404s
 8. Flash Messages
 9. In-Component Route Guards
-10.
+10. Global and Per-Route Guards
+11. Wrapping Up - Route Meta Fields, Lazy Loading Routes, Scroll Behaviour
 
 ## Project setup
 
